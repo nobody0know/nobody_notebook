@@ -31,5 +31,3 @@ curl -v -o /dev/null https://www.google.com
 若连上了即可科学上网
 
 如git带等软件可能需要单独配置代理
-
-
