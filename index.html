@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>欢迎来到nobody的笔记本</title>
+  <title>紫野的笔记本</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -12,13 +12,18 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      coverpage:ture,
-      loadSidebar:ture,
-      name: '',
-      repo: ''
+      loadSidebar: true, 
+      alias: {
+      '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      subMaxLevel: 5,
+      name: '紫野',
+      repo: 'https://github.com/nobody0know/nobody_notebook'
+
     }
   </script>
   <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
 </html>
