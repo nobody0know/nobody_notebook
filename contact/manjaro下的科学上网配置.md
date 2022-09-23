@@ -8,7 +8,7 @@
 
 ```shell
 su
-cd /ect/profile.d
+cd root/ect/profile.d
 vim xxx.sh
 ```
 
