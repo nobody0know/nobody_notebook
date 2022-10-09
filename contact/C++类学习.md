@@ -45,7 +45,7 @@ int main()
 
 若定义类一个类A有两个实例a，b，且a中成员有指针并且在构造函数中对其使用了new去申请了空间，当使用b=a这种方法去给b赋初值时调用隐式默认复制构造函数时会将b的指针成员赋值为a所开辟的空间的首地址，在构造时倒没什么问题，但是在当a，b到达生命域结束所调用析构函数时b释放了a开辟的空间然后a又对这个已经被释放的空间再次执行析构函数进行释放则会造成段错误导致程序崩溃。
 
-> 析构函数也可以直接调用，例如销毁用[布置 new](https://zh.cppreference.com/w/cpp/language/new "cpp/language/new") 或通过分配器成员函数（如 [std::allocator::destroy()](https://zh.cppreference.com/w/cpp/memory/allocator/destroy "cpp/memory/allocator/destroy")）构造的对象。注意，对普通对象（如局部变量）直接调用析构函数会导致在作用域结束处再次调用析构函数时引发未定义行为。
+> 析构函数也可以直接调用，例如销毁用[布置 new](https://zh.cppreference.com/w/cpp/language/new "cpp/language/new") 或通过分配器成员函数（如 [destroy()](https://zh.cppreference.com/w/cpp/memory/allocator/destroy "cpp/memory/allocator/destroy")）构造的对象。注意，对普通对象（如局部变量）直接调用析构函数会导致在作用域结束处再次调用析构函数时引发未定义行为。
 
 ![loading-ag-544](../images/class_range.png)
 
