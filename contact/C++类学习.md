@@ -47,7 +47,7 @@ int main()
 
 > 析构函数也可以直接调用，例如销毁用[布置 new](https://zh.cppreference.com/w/cpp/language/new "cpp/language/new") 或通过分配器成员函数（如 [std::allocator::destroy()](https://zh.cppreference.com/w/cpp/memory/allocator/destroy "cpp/memory/allocator/destroy")）构造的对象。注意，对普通对象（如局部变量）直接调用析构函数会导致在作用域结束处再次调用析构函数时引发未定义行为。
 
-![class_range.png](/home/nobody_knows/nobody_notebook/images/class_range.png)
+![loading-ag-544](../images/class_range.png)
 
 ## static静态成员/函数
 
