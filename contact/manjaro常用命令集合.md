@@ -54,3 +54,9 @@ yay -Qi package # 检查安装的版本
 ```shell
 sudo debtap xxxxxxx.deb
 ```
+
+# AUR安装PKGBUILD文件
+
+```shell
+makepkg -si #于此文件的目录下使用此命令
+```
