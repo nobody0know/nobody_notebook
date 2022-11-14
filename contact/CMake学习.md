@@ -99,5 +99,4 @@ elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
 else()
   message(STATUS "Configuring on/for ${CMAKE_SYSTEM_NAME}")
 endif()
-
 ```

@@ -60,3 +60,8 @@ sudo debtap xxxxxxx.deb
 ```shell
 makepkg -si #于此文件的目录下使用此命令
 ```
+
+## vim按了ctrl+z的处理方法
+
+ctrl+z 退出后，在显示[1]+ Stopped vi xxx.xxx时，终端直接输入fg 1（中括号中显示的数字，即作业号，若只有一个，作业号可忽略）这样就会重回vim编辑界面了，然后正常退出即可。
+ls -a 一下，会看到隐藏的.swp文件 删除了此文件即可，再次使用vim打开文件就不会出现上述界面了。
