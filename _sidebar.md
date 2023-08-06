@@ -15,3 +15,7 @@
 * 紫野的ROS学习
   * [ROS学习](contact/ROS%E5%AD%A6%E4%B9%A0.md)
   * [ROS仿真](contact/ROS%E4%BB%BF%E7%9C%9F.md)
+* 紫野的嵌入式学习
+  * [DMA](contact/使用DMA进行UART传输的具体解释.md)
+  * [大疆电机](contact/C620电调和GM6020在can发送控制信号时的坑.md)
+  * [C语言](contact/C语言的模块化思想.md)
