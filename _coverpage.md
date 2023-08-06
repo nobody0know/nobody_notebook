@@ -7,7 +7,7 @@
 </center>
 
 
-<b style=font-size:40px>紫野的笔记本</b>
+<b style=font-size:40px>紫野的笔记本<br /></b>
 <a style=font-size:25px>夏日炎炎ﾟ ∀ﾟ)⊂彡❄️))∀`)给你释放冰系魔法</a>
 
 [GitHub](https://github.com/nobody0know/nobody_notebook)
