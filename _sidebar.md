@@ -18,4 +18,6 @@
 * 紫野的嵌入式学习
   * [DMA](contact/使用DMA进行UART传输的具体解释.md)
   * [大疆电机](contact/C620电调和GM6020在can发送控制信号时的坑.md)
-  * [C语言](contact/C语言的模块化思想.md)
+  * [C语言的模块化思想](contact/C语言的模块化思想.md)
+* 紫野的软路由配置
+  * [旁路由](contact/软路由之旁路由配置.md)
