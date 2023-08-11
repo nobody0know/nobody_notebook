@@ -12,9 +12,13 @@
   * [类的使用](contact/C%2B%2B%E7%B1%BB%E5%AD%A6%E4%B9%A0.md)
 * 紫野的CMake学习
   * [CMake基础](contact/CMake%E5%AD%A6%E4%B9%A0.md)
-* 紫野的ROS学习
+* 紫野的ROS学习&2023赛季悍匠哨兵
   * [ROS学习](contact/ROS%E5%AD%A6%E4%B9%A0.md)
   * [ROS仿真](contact/ROS%E4%BB%BF%E7%9C%9F.md)
+  * [代码部署](contact/2023赛季悍匠哨兵导航代码部署.md)
+  * [mid360雷达驱动配置](contact/雷达驱动配置.md)
+  * [Point和Fast-lio配置使用](contact/Point-lio和Fast-lio配置使用.md)
+  * [sentry_navigation代码说明](contact/sentry_navigation代码说明.md)
 * 紫野的嵌入式学习
   * [DMA](contact/使用DMA进行UART传输的具体解释.md)
   * [大疆电机](contact/C620电调和GM6020在can发送控制信号时的坑.md)

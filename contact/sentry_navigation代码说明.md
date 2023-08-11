@@ -1,0 +1,13 @@
+# sentry_navigation代码说明
+
+## mbf_bridge.cpp
+
+目标点转发程序，因为rviz的goal箭头（默认紫箭头）发布的话题为geometry_msgs::PoseStamped类型的goal话题与move_base_flex所接收的mbf_msgs::MoveBaseActionGoal 类型的goal话题类型不符，因此需要此转发程序（后面才知道原来rviz可以设置goal箭头所发布的话题名，未测试过），此程序还调用了move_base_flex清除障碍层的服务(service)，会在每次获取到goal话题时先清除障碍层再发布目标点至move_base_flex防止目标点存在未被清除的障碍物导致发点失败
+
+## odom_trans.cpp
+
+此程序为Point-lio里程计转发程序，将其基于的雷达系的里程计转为机器人系的里程计，来使用此里程计作为哨兵在全局的位姿信息，此程序会发布camera_init系（激光里程计初始的系）到base_footprint（哨兵系）的TF变换，以及odom的里程计话题（其中位姿来源于变换后的TF关系，速度为位姿做微分，未测试速度的准确度），具体调参见Point-lio配置使用，若需修改为Fast-lio所使用，修改subscribe的话题名为Fast-lio发布的里程计话题即可
+
+## follow_enemy.cpp
+
+此程序用于测试追击敌人，通过接收视觉发送的敌人在相机系的坐标点，监听map到哨兵系的TF变换，计算相机系中敌人的欧氏距离并在敌人的坐标点上画一定半径的圆，圆与欧氏距离连线相交得到敌人跟前的一个攻击点，将此点变换到map系，得到攻击点在世界系的绝对坐标，将攻击点作为导航点发布出来，即可实现追击敌人
