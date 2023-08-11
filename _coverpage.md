@@ -14,4 +14,3 @@
 [Get Started](#欢迎光临紫野的笔记本！)
 <!-- 背景图片 -->
 ![](_media/wallhaven-d6w763.jpg)
-![color](transparent)
