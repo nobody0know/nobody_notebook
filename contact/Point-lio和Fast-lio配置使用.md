@@ -2,7 +2,7 @@
 
 ⚠️ 注意，此两种算法都需要静置下启动，否则若未在静置下完成IMU初始化会导致里程计跑飞
 
-<img title="" src="\images\2023-08-11-21-24-59-image.png" alt="" width="148" data-align="center">
+<img title="" src="../images/513cac989cec2cdeafa9386a56ba23d5e28544f7.png" alt="" data-align="center">
 
 Point-lio和Fast-lio的配置使用一般是根据哨兵机器人雷达的安装位置和雷达的数量具体地调整yaml文件
 
@@ -53,11 +53,11 @@ extrinsic_R: [  0, -1, 0,
             0.6018, 0, 0.7986]
 ```
 
-![](\images\2023-08-11-21-25-52-image.png)
+![](../images/d4525b36583a9e9891122dfb899f27ced3005f9f.png)
 
-![](\images\2023-08-11-21-26-08-image.png)
+![](../images/2ba11568d3c15259b83c05493826cd25266e9c9e.png)
 
-![](\images\2023-08-11-21-26-21-image.png)
+![](../images/5fa666c283903ec0fe0766a47a7b71f6ccd6c988.png)
 
 ⚠️ 注意，point-lio建图保存pcd文件的功能疑似有问题，若需得到保存的稠密点云图，建议使用fast-lio
 
