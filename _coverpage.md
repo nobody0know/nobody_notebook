@@ -13,5 +13,4 @@
 [GitHub](https://github.com/nobody0know/nobody_notebook)
 [Get Started](#欢迎光临紫野的笔记本！)
 <!-- 背景图片 -->
-![](images/wallhaven-d6w763.jpg)
-![color](#f0f0f0)
+![](_media/wallhaven-d6w763.jpg)
