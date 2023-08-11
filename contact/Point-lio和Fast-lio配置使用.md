@@ -2,7 +2,7 @@
 
 ⚠️ 注意，此两种算法都需要静置下启动，否则若未在静置下完成IMU初始化会导致里程计跑飞
 
-<img title="" src="../images/513cac989cec2cdeafa9386a56ba23d5e28544f7.png" alt="" data-align="center">
+![](../images/513cac989cec2cdeafa9386a56ba23d5e28544f7.png)
 
 Point-lio和Fast-lio的配置使用一般是根据哨兵机器人雷达的安装位置和雷达的数量具体地调整yaml文件
 
