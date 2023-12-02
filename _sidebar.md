@@ -19,10 +19,13 @@
   * [mid360雷达驱动配置](contact/雷达驱动配置.md)
   * [Point和Fast-lio配置使用](contact/Point-lio和Fast-lio配置使用.md)
   * [sentry_navigation代码说明](contact/sentry_navigation代码说明.md)
+  * [地面分割](contact/地面分割代码参数详解.md)
 * 紫野的嵌入式学习
   * [DMA](contact/使用DMA进行UART传输的具体解释.md)
-  * [大疆电机](contact/C620电调和GM6020在can发送控制信号时的坑.md)
+  * [clion嵌入式开发踩坑](contact/clion打开STM32cube工程时构建错误问题.md)
+  * [大疆电机踩坑](contact/C620电调和GM6020在can发送控制信号时的坑.md)
   * [C语言的模块化思想](contact/C语言的模块化思想.md)
+  * [嵌入式linux LCD显示老婆图片](contact/嵌入式linux%20使用framebuffer显示jpg图片.md)
 * 紫野的软路由配置
   * [旁路由](contact/软路由之旁路由配置.md)
   * [主路由+负载均衡](contact/主路由配置+负载均衡.md)
