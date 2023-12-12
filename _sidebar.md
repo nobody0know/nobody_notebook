@@ -28,6 +28,7 @@
   * [大疆电机踩坑](contact/C620电调和GM6020在can发送控制信号时的坑.md)
   * [C语言的模块化思想](contact/C语言的模块化思想.md)
   * [嵌入式linux LCD显示老婆图片](contact/嵌入式linux%20使用framebuffer显示jpg图片.md)
+	* [嵌入式linux mpu6050驱动移植](contact/嵌入式Linux%20第一次驱动移植—quark%20陀螺仪驱动.md)
 	* [嵌入式linux 回调读取按键事件](contact/嵌入式linux%20使用signal读取按键中断.md)
 * 紫野的软路由配置
   * [旁路由](contact/软路由之旁路由配置.md)
