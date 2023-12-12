@@ -1,8 +1,7 @@
 # 嵌入式Linux 第一次驱动移植—quark 陀螺仪驱动
 
 先上效果图
-
-<img src="./images/73e079b29585169ad14806e4bec0b50fa65b4848.jpg" title="" alt="" width="396">
+![](../images/73e079b29585169ad14806e4bec0b50fa65b4848.jpg)
 
 十分感谢这位B站老哥的分享，为我第一次实现驱动移植带来了指路明灯
 
