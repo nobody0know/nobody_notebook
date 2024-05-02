@@ -14,4 +14,4 @@
 
 <!-- 背景图片 -->
 
-![](_media/wallhaven-d6w763.jpg)
+![](_media/chenmo.png)
