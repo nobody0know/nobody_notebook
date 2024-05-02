@@ -205,5 +205,5 @@ pre[class*="language-"] {
 }
 
 .mask {
-	display: none;
+	display: rgba(0, 0, 0, 0.2);;
 }
