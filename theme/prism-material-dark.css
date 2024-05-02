@@ -203,3 +203,7 @@ pre[class*="language-"] {
 .token.variable {
 	color: #ff6666;
 }
+
+.mask {
+	display: none;
+}
