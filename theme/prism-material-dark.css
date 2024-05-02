@@ -205,12 +205,6 @@ pre[class*="language-"] {
 	color: #c52ef3;
 }
 
-<<<<<<< Updated upstream
 .mask {
-	display: rgba(212, 210, 210, 0.041);
+	display: none;
 }
-=======
-.mask{
-	display:none;
-}
->>>>>>> Stashed changes
