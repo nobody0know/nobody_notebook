@@ -201,9 +201,16 @@ pre[class*="language-"] {
 }
 
 .token.variable {
-	color: #ff6666;
+	color: #37b169;
+	color: #c52ef3;
 }
 
+<<<<<<< Updated upstream
 .mask {
 	display: rgba(212, 210, 210, 0.041);
 }
+=======
+.mask{
+	display:none;
+}
+>>>>>>> Stashed changes
