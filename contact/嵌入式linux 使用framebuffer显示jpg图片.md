@@ -197,3 +197,5 @@ int fb_pixel(void *fbmem, int width, int height, int x, int y, unsigned int colo
 显示color就是从屏幕的映射地址中计算得到每一个像素点的坐标然后给它赋值color就行了
 
 交叉编译好程序然后把老婆图片命名为lcd.jpg和编译出来的arm可执行程序放在一个文件夹里面在板子上跑程序就能看到全彩的wife在LCD上了！！！
+
+⚠️注意，若程序传到板子上运行不了，可以使用`chmod +x xxx` 把程序设为可执行文件

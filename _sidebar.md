@@ -1,5 +1,5 @@
-* Marktext的使用
-  * [优雅地放置图片](contact/论Marktext如何正确的保存图片使本地和博客都能访问.md)
+* 紫野的笔记本搭建之路
+  * [marktext优雅地放置图片](contact/论Marktext如何正确的保存图片使本地和博客都能访问.md)
 * 紫野的linux学习
   * [manjaro常用命令集合](contact/manjaro常用命令集合.md)
   * [manjaro科学上网配置方法](contact/manjaro下的科学上网配置.md)
@@ -20,11 +20,13 @@
   * [sentry_navigation代码说明](contact/sentry_navigation代码说明.md)
   * [地面分割](contact/地面分割代码参数详解.md)
 * 紫野的嵌入式学习
-  * [DMA](contact/使用DMA进行UART传输的具体解释.md)
+  * [STM32 DMA串口](contact/使用DMA进行UART传输的具体解释.md)
   * [clion嵌入式开发踩坑](contact/clion打开STM32cube工程时构建错误问题.md)
   * [大疆电机踩坑](contact/C620电调和GM6020在can发送控制信号时的坑.md)
   * [C语言的模块化思想](contact/C语言的模块化思想.md)
   * [STM32L4 + Lora串口模块低功耗实战](contact/STM32L4%20+%20Lora串口模块低功耗实战.md)
+  * [嵌入式面试宝典](contact/嵌入式软件知识面试宝典.md)
+* 紫野的嵌入式Linux学习
   * [嵌入式linux LCD显示老婆图片](contact/嵌入式linux%20使用framebuffer显示jpg图片.md)
   * [嵌入式linux mpu6050驱动移植](contact/嵌入式Linux%20第一次驱动移植—quark%20陀螺仪驱动.md)
   * [嵌入式linux 回调读取按键事件](contact/嵌入式linux%20使用signal读取按键中断.md)
