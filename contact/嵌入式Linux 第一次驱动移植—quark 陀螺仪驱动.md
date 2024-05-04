@@ -95,7 +95,7 @@ i2c@01c2ac00 {
             #size-cells = <0x0>;
             linux,phandle = <0x6a>;
             phandle = <0x6a>;
-            mpu6050@68 {     /*添加MPU6050子节点*/
+            mpu6050@68 {     /*添加MPU6050子节点,"@68"只是为了增加可读性和避免命名冲突*/
            /*设置MPU6050子节点属性为fire,i2c_mpu6050，和驱动保持一致即可。*/
                 compatible = "fire,i2c_mpu6050"; 
      /*设置reg属性，reg属性只需要指定MPU6050在i2c0总线上的地址，原理图分析可知为0x68。*/            

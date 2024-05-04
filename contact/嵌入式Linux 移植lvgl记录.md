@@ -64,5 +64,3 @@ quark夸克开发板和100ask imxnull pro开发板的源码都在这里
 `/etc/init.d/S99myirhmi2 stop`
 
 然后，然后挑个demo烧进去就有效果了，这次我试了一下NXP的gui guider的软件去图形化配置UI，把lvgl升到了V8.3，跑了个NXP的打印机界面的例程
-
-

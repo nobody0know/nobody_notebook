@@ -190,7 +190,7 @@ void sig_callback(int sig)
                         //  read(button_fd, &event, sizeof(event)) == sizeof(event);
                         //  if (event.type == 0x1 && event.value == 0x1)
                         {
-                                
+
 
                                 if (bool_show_wife == 0)
                                 {
@@ -249,5 +249,4 @@ int main(int argc, char **argv)
 
         close(fb);
 }
-
 ```
