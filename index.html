@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//fastly.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link href="./theme/prism-material-dark.css" rel="stylesheet" />
 </head>
 <body>
@@ -23,15 +23,30 @@
       alias: {
       '/.*/_sidebar.md': '/_sidebar.md'
       },
+      footer: {
+       copy: '<span>Copyright &copy; 2024 &nbsp 💖 &nbsp</span>',
+       auth: ' <strong><a href="https://github.com/nobody0know" target="_blank">Xiangjian.Lai</a></strong>',
+       pre: '<hr/>',
+       style: 'font-size: 18px; text-align: center;',
+     },
       themeColor: '#BB5245',
       coverpage: true,
+      onlyCover: true,
       subMaxLevel: 5,
+      auto2top: true,
       name: '紫野',
-      repo: 'https://github.com/nobody0know/nobody_notebook'
-
+      repo: 'https://github.com/nobody0know/nobody_notebook',
     }
+    
   </script>
   <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//fastly.jsdelivr.net/npm/docsify@4"></script>
+
+   <!-- 访问量统计 -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  <!-- 页脚 -->
+  <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+ 
 </body>
 </html>

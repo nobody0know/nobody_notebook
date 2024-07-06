@@ -138,3 +138,7 @@ pre[class*="language-"] {
 .token.inserted {
 	color: green;
 }
+
+.mask {
+	display: none;
+}
