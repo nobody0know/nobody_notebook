@@ -12,5 +12,3 @@ add_compile_options(-mfloat-abi=hard -mfpu=fpv4-sp-d16)
 add_link_options(-mfloat-abi=hard -mfpu=fpv4-sp-d16)
 //CMakeList文件中去除此段的注释
 ```
-
-
