@@ -9,6 +9,9 @@
   * [使用新型for遍历数组](contact/c%2B%2B%E4%B8%8B%E7%9A%84for%E7%AE%80%E5%8C%96%E7%94%A8%E6%B3%95.md)
   * [二维数组的指针使用](contact/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E6%8C%87%E9%92%88%E4%BD%BF%E7%94%A8.md)
   * [类的使用](contact/C%2B%2B%E7%B1%BB%E5%AD%A6%E4%B9%A0.md)
+  * [面向对象课程期末复习](contact/期末复习.md)
+* 悲催找工作之路
+  * [代码随想录刷题记录](contact/代码随想录刷题记录.md)
 * 紫野的CMake学习
   * [CMake基础](contact/CMake%E5%AD%A6%E4%B9%A0.md)
 * 紫野的ROS学习&2023赛季悍匠哨兵
