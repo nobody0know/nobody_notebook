@@ -12,6 +12,7 @@
   * [面向对象课程期末复习](contact/期末复习.md)
 * 悲催找工作之路
   * [代码随想录刷题记录](contact/代码随想录刷题记录.md)
+  * [嵌入式面试宝典](contact/嵌入式软件知识面试宝典.md)
 * 紫野的CMake学习
   * [CMake基础](contact/CMake%E5%AD%A6%E4%B9%A0.md)
 * 紫野的ROS学习&2023赛季悍匠哨兵
@@ -28,7 +29,6 @@
   * [大疆电机踩坑](contact/C620电调和GM6020在can发送控制信号时的坑.md)
   * [C语言的模块化思想](contact/C语言的模块化思想.md)
   * [STM32L4 + Lora串口模块低功耗实战](contact/STM32L4%20+%20Lora串口模块低功耗实战.md)
-  * [嵌入式面试宝典](contact/嵌入式软件知识面试宝典.md)
 * 紫野的嵌入式Linux学习
   * [嵌入式linux LCD显示老婆图片](contact/嵌入式linux%20使用framebuffer显示jpg图片.md)
   * [嵌入式linux mpu6050驱动移植](contact/嵌入式Linux%20第一次驱动移植—quark%20陀螺仪驱动.md)
