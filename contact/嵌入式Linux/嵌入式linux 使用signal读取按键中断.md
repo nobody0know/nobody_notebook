@@ -41,7 +41,7 @@ void sig_callback(int sig)
 }
 ```
 
-![](../images/2023-12-07-23-06-31-image.png)
+![](../../images/2023-12-07-23-06-31-image.png)
 
 所有代码
 

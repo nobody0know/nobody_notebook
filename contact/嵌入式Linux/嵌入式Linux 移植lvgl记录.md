@@ -44,7 +44,7 @@ quark夸克开发板和100ask imxnull pro开发板的源码都在这里
 
 然后夸克开发板它的系统默认是跑了一个framebuffer的终端的，这个要关掉，不然就会冲突，它的板载终端就是跑了一个叫getty@tty1.service的服务，systemctl stop掉就行，然后就能跑自己的lvgl程序了
 
-![](../images/2024-05-02-17-09-27-image.png)
+![](../../images/2024-05-02-17-09-27-image.png)
 
 ## 100askIMX6NULL_Pro开发板
 
