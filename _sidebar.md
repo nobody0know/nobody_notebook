@@ -21,14 +21,14 @@
   * [STM32 DMA串口](contact/嵌入式软件/使用DMA进行UART传输的具体解释.md)
   * [clion嵌入式开发踩坑](contact/嵌入式软件/clion打开STM32cube工程时构建错误问题.md)
   * [大疆电机踩坑](contact/嵌入式软件/C620电调和GM6020在can发送控制信号时的坑.md)
-* 嵌入式Linux学习
-  * [嵌入式linux LCD显示老婆图片](contact/嵌入式linux/嵌入式linux%20使用framebuffer显示jpg图片.md.md)
-  * [嵌入式linux mpu6050驱动移植](contact/嵌入式linux/嵌入式Linux%20第一次驱动移植—quark%20陀螺仪驱动.md)
-  * [嵌入式linux 回调读取按键事件](contact/嵌入式linux/嵌入式linux%20使用signal读取按键中断.md)
-  * [嵌入式linux 开发知识通用知识](contact/嵌入式linux/嵌入式Linux%20驱动开发通用知识.md)
 * 软路由配置
   * [旁路由](contact/软路由折腾/软路由之旁路由配置.md)
   * [主路由+负载均衡](contact/软路由折腾/主路由配置+负载均衡.md)
+* 嵌入式Linux学习
+  * [嵌入式linux LCD显示jpg图片](contact/嵌入式linux/嵌入式linux%20使用framebuffer显示jpg图片.md.md)
+  * [嵌入式linux mpu6050驱动移植](contact/嵌入式linux/嵌入式Linux%20第一次驱动移植—quark%20陀螺仪驱动.md)
+  * [嵌入式linux 回调读取按键事件](contact/嵌入式linux/嵌入式linux%20使用signal读取按键中断.md)
+  * [嵌入式linux 开发知识通用知识](contact/嵌入式linux/嵌入式Linux%20驱动开发通用知识.md)
 * 3D打印机
   * [3d打印之路](contact/3d打印/3d打印历程——从大鱼corexy到Tiny-m.md)
 * 模拟电子硬件学习
