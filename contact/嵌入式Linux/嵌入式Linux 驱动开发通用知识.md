@@ -159,7 +159,7 @@ mpu6050@68 {
                 compatible = "fire,i2c_mpu6050";
                 reg = <0x68>;
                 status = "okay";
-			};
+            };
 ```
 
 #### #**address-cells属性（整数）和**#**size-cells属性（整数）**
