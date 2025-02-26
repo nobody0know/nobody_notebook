@@ -24,11 +24,11 @@
 * 软路由配置
   * [旁路由](contact/软路由折腾/软路由之旁路由配置.md)
   * [主路由+负载均衡](contact/软路由折腾/主路由配置+负载均衡.md)
-* 嵌入式Linux学习
+<!-- * 嵌入式Linux学习
   * [嵌入式linux LCD显示jpg图片](contact/嵌入式linux/嵌入式linux%20使用framebuffer显示jpg图片.md.md)
   * [嵌入式linux mpu6050驱动移植](contact/嵌入式linux/嵌入式Linux%20第一次驱动移植—quark%20陀螺仪驱动.md)
   * [嵌入式linux 回调读取按键事件](contact/嵌入式linux/嵌入式linux%20使用signal读取按键中断.md)
-  * [嵌入式linux 开发知识通用知识](contact/嵌入式linux/嵌入式Linux%20驱动开发通用知识.md)
+  * [嵌入式linux 开发知识通用知识](contact/嵌入式linux/嵌入式Linux%20驱动开发通用知识.md) -->
 * 3D打印机
   * [3d打印之路](contact/3d打印/3d打印历程——从大鱼corexy到Tiny-m.md)
 * 模拟电子硬件学习
