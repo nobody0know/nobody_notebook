@@ -1,0 +1,17 @@
+// Site overrides: make code blocks more readable.
+:root {
+  --syntax-uno-2: hsl(260 92% 88%);   // main code text, brighter
+  --syntax-comment: hsl(260 17% 61%); // comments, was nearly invisible
+  --syntax-operator: hsl(260 28% 72%);
+  --syntax-punctuation: hsl(260 28% 72%);
+  --syntax-muted: hsl(260 14% 56%);   // line numbers / filename
+  --syntax-type: var(--syntax-duo-1); // types, brighter than before
+}
+
+.highlight {
+  line-height: 1.65;
+
+  code {
+    font-size: 0.92rem;
+  }
+}
