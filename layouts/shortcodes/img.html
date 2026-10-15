@@ -1,0 +1,4 @@
+{{- $src := strings.TrimLeft "/" (.Get 0) | relURL -}}
+{{- $alt := .Get 1 -}}
+{{- $title := .Get 2 -}}
+<img src="{{ $src }}"{{ with $alt }} alt="{{ . }}"{{ end }}{{ with $title }} title="{{ . }}"{{ end }}>

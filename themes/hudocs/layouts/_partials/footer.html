@@ -1,0 +1,20 @@
+{{- $copyrightRaw := or site.Params.footer_copyright site.Params.copyright -}}
+{{- $copyright := replace $copyrightRaw "{{Year}}" (now.Year | string) -}}
+
+{{- $date := .Lastmod -}}
+
+{{- if .GitInfo }}
+  {{- $date = .GitInfo.AuthorDate -}}
+{{- end }}
+
+{{- $dateFormat := or site.Params.footer_date_format site.Params.date_format | default "2006-01-02" -}}
+{{- $lastmod := $date.Format $dateFormat -}}
+
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div class="footer-item">{{ i18n "edited" }}: {{ $lastmod }}</div>
+    {{- with $copyright }}
+      <div class="footer-item">{{ . | markdownify }}</div>
+    {{- end }}
+  </div>
+</footer>

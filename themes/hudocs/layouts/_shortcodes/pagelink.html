@@ -1,0 +1,52 @@
+{{- $href := "" -}}
+{{- $title := "" -}}
+{{- $desc := "" -}}
+{{- $icon := "" -}}
+{{- $rel := "" -}}
+
+{{- if .IsNamedParams -}}
+  {{- $href = .Get "href" -}}
+  {{- $title = .Get "title" | default (.Get "name") | default (.Get "text") -}}
+  {{- $desc = .Get "description" | default (.Get "subtitle") -}}
+  {{- $icon = .Get "icon" -}}
+  {{- $rel = .Get "rel" -}}
+{{- else -}}
+  {{- $href = .Get 0 -}}
+  {{- $title = .Get 1 -}}
+  {{- $desc = .Get 2 -}}
+  {{- $icon = .Get 3 -}}
+  {{- $rel = .Get 4 -}}
+{{- end -}}
+
+{{- with $icon -}}
+  {{- $icon = trim . " " -}}
+{{- end -}}
+
+{{- if not $href -}}
+  {{- errorf "%s: missing 'href' parameter for 'pagelink' shortcode." .Position -}}
+{{- end -}}
+
+{{- if not $title -}}
+  {{- errorf "%s: missing label parameter ('title', 'name' or 'text') for 'pagelink' shortcode." .Position -}}
+{{- end -}}
+
+{{- $link := partial "resolve-link" (dict "href" $href "rel" $rel) -}}
+
+<a class="pagelink has-icon" href="{{ $link.url }}"{{ with $link.target }} target="{{ . }}"{{ end }}{{ with $link.rel }} rel="{{ . }}"{{ end }}>
+  {{- with $icon -}}
+    <span class="pagelink-icon i-md icon-adjust">
+      {{- partial "svg" (dict "icon" .) -}}
+    </span>
+  {{- end -}}
+  <span class="pagelink-content">
+    <span class="pagelink-title">{{ $title }}</span>
+    {{- with $desc -}}
+      <span class="pagelink-meta">{{ . }}</span>
+    {{- end -}}
+  </span>
+  {{- if $link.isExternal -}}
+    <span class="pagelink-external i-md icon-adjust">
+      {{ partial "svg" (dict "icon" "arrow-up-right") }}
+    </span>
+  {{- end -}}
+</a>

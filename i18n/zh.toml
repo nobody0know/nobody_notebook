@@ -1,0 +1,119 @@
+[change_theme]
+other = "切换主题"
+
+[auto]
+other = "自动"
+
+[light]
+other = "浅色"
+
+[dark]
+other = "深色"
+
+[contents]
+other = "目录"
+
+[search]
+other = "搜索"
+
+[search_in_doc]
+other = "搜索文档"
+
+[search_error]
+other = "搜索索引加载失败"
+
+[search_navigate]
+other = "导航"
+
+[search_select]
+other = "选择"
+
+[search_close]
+other = "关闭"
+
+[edit_on_github]
+other = "在 GitHub 上编辑"
+
+[edited]
+other = "编辑于"
+
+[no_results]
+other = "无结果"
+
+[no_items]
+other = "暂无内容"
+
+[no_results_text]
+other = "这里似乎还没有相关记录，要不去 GitHub 上帮忙补充一下？"
+
+[copy]
+other = "复制"
+
+[copied]
+other = "已复制！"
+
+[copy_error]
+other = "复制失败！"
+
+[close]
+other = "关闭"
+
+[versions]
+other = "版本"
+
+[languages]
+other = "语言"
+
+[main_section_text]
+other = "所有文档列表"
+
+[pagination_label]
+other = "分页"
+
+[pagination_previous]
+other = "上一页"
+
+[pagination_next]
+other = "下一页"
+
+[no_summary]
+other = "暂无摘要"
+
+[new]
+other = "新"
+
+[anchor]
+other = "锚点"
+
+[toggle_navigation]
+other = "切换导航"
+
+[skip_to_content]
+other = "跳到正文"
+
+[documentation]
+other = "文档"
+
+[main_menu]
+other = "主菜单"
+
+[toggle_section]
+other = "展开/收起小节"
+
+[posts]
+other = "博客"
+
+[no_posts]
+other = "没有文章"
+
+[ask_ai]
+other = "询问 AI"
+
+[open_in_chatgpt]
+other = "在 ChatGPT 中打开"
+
+[open_in_claude]
+other = "在 Claude 中打开"
+
+[ask_ai_prompt]
+other = "阅读以下链接并回答我的问题：%s"

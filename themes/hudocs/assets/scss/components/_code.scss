@@ -1,0 +1,292 @@
+code,
+pre {
+  font-family: var(--font-monospace);
+}
+
+:not(pre)>code {
+  padding: .2em .4em;
+  white-space: nowrap;
+  background-color: var(--surface-container);
+  border-radius: .4em;
+  font-weight: 400;
+  font-size: .875rem;
+}
+
+.highlight {
+  --code-padding: clamp(1rem, 2.5vw, 1.5rem);
+  --highlight-radius: .5rem;
+  background: var(--syntax-bg);
+  position: relative;
+  border-radius: var(--highlight-radius);
+  white-space: normal;
+  line-height: 1.5;
+
+  &[filename] {
+    &::before {
+      content: attr(filename);
+      display: block;
+      padding: .75rem;
+      font-size: .875rem;
+      line-height: 1;
+      background-color: var(--syntax-gutter);
+      border-top-left-radius: var(--highlight-radius);
+      border-top-right-radius: var(--highlight-radius);
+      color: var(--syntax-muted);
+    }
+
+    .lntd:first-child {
+      border-top-left-radius: 0;
+    }
+  }
+
+  pre {
+    background-color: transparent !important;
+    overflow-x: auto;
+    color: var(--syntax-fg);
+    padding: var(--code-padding) 0;
+
+    scrollbar-color: var(--syntax-scrollbar-thumb) var(--syntax-scrollbar-track);
+    scrollbar-width: thin;
+  }
+
+  code {
+    display: table;
+    white-space: pre;
+    font-size: .875rem;
+    width: 100%;
+
+    >span:not(.line) {
+      padding: 0 var(--code-padding);
+    }
+  }
+
+  .line {
+    display: block;
+    padding: 0 var(--code-padding);
+
+    &.hl {
+      background-color: var(--syntax-selection);
+      box-shadow: 3px 0 0 var(--syntax-selection-border) inset;
+    }
+  }
+
+  .ln {
+    padding-inline-end: 1.5rem;
+    color: var(--syntax-muted);
+  }
+
+  .lntable {
+    width: 100%;
+  }
+
+  .lntd {
+    padding: 0;
+
+    &:first-child {
+      width: 1%;
+      background-color: var(--syntax-gutter);
+      border-top-left-radius: var(--highlight-radius);
+      border-bottom-left-radius: var(--highlight-radius);
+    }
+
+    &:last-child {
+      width: 100%;
+      max-width: 0;
+    }
+  }
+
+  .lnt {
+    color: var(--syntax-muted);
+  }
+
+  .lnlinks {
+    color: var(--syntax-link);
+  }
+}
+
+
+.code-copy {
+  position: absolute;
+  right: -.5rem;
+  top: -.5rem;
+  border-radius: 50rem;
+  background-color: var(--bg, var(--syntax-gutter));
+  color: var(--syntax-fg);
+  padding: 0.5rem;
+  transition: background-color .3s;
+  --svg-size: 18px;
+
+  &:hover {
+    --bg: var(--primary);
+    color: var(--on-primary);
+  }
+}
+
+.chroma {
+  color: var(--syntax-fg);
+
+  .nt {
+    color: var(--syntax-tag);
+  }
+
+  .na {
+    color: var(--syntax-attribute);
+  }
+
+  .nc,
+  .nn {
+    color: var(--syntax-class);
+  }
+
+  .p,
+  .w {
+    color: var(--syntax-punctuation);
+  }
+
+  .o,
+  .ow {
+    color: var(--syntax-operator);
+  }
+
+  .c,
+  .cm,
+  .c1,
+  .cp,
+  .cpf {
+    color: var(--syntax-comment);
+    font-style: italic;
+  }
+
+  .kd,
+  .k,
+  .kc,
+  .kn,
+  .kp,
+  .kr,
+  .kw {
+    color: var(--syntax-keyword);
+  }
+
+  .kt {
+    color: var(--syntax-type);
+  }
+
+  .n,
+  .nv,
+  .nx {
+    color: var(--syntax-variable);
+  }
+
+  .l,
+  .ld,
+  .lg,
+  .li,
+  .ln,
+  .ls,
+  .no {
+    color: var(--syntax-constant);
+  }
+
+  .s,
+  .sa,
+  .sb,
+  .sc,
+  .sd,
+  .se,
+  .sh,
+  .si,
+  .s1,
+  .s2,
+  .ss,
+  .sx {
+    color: var(--syntax-string);
+  }
+
+  .sr {
+    color: var(--syntax-regex);
+  }
+
+  .m,
+  .mb,
+  .mf,
+  .mh,
+  .mi,
+  .il,
+  .mo {
+    color: var(--syntax-number);
+  }
+
+  .nb,
+  .nf {
+    color: var(--syntax-function);
+  }
+
+  .nd {
+    color: var(--syntax-decorator);
+  }
+
+  .ne,
+  .err {
+    color: var(--syntax-error);
+  }
+}
+
+.type:not(.type-values) {
+  background-color: var(--type-bg, var(--surface-container));
+  color: var(--type-color, var(--on-surface));
+}
+
+.type {
+  --type-bg: color-mix(in srgb, var(--type-color) 8%, transparent);
+
+  &-textual {
+    --type-color: var(--type-textual);
+  }
+
+  &-numeric {
+    --type-color: var(--type-numeric);
+  }
+
+  &-logical {
+    --type-color: var(--type-logical);
+  }
+
+  &-structural {
+    --type-color: var(--type-structural);
+  }
+
+  &-custom {
+    --type-color: var(--type-custom);
+  }
+
+  &-optional::after {
+    content: "?";
+    font-weight: 500;
+    opacity: .75;
+  }
+
+  &-values {
+    padding: 0;
+    background-color: transparent;
+
+    &::after,
+    &::before {
+      color: var(--outline);
+    }
+
+    &::before {
+      content: "{";
+    }
+
+    &::after {
+      content: "}";
+    }
+
+    > span + span::before {
+      content: " | ";
+      display: inline-block;
+      margin-inline: .125rem;
+      color: var(--outline);
+    }
+  }
+}

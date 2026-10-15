@@ -1,0 +1,20 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'sha256-W0jk2ExGj0G4S29iqRqV6N9Py/pu0xdU/zputi6bfS8='; img-src 'self' data:; object-src 'none'; frame-ancestors 'self'; base-uri 'self';"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "sameorigin"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Permissions-Policy = "geolocation=(self), microphone=(), camera=()"
+    Cache-Control = "public, max-age=31536000, no-transform"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Security-Policy = "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;"
+
+[[headers]]
+  for = "/*/sitemap.xml"
+  [headers.values]
+    Content-Security-Policy = "default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;"

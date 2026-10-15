@@ -1,0 +1,31 @@
+{{- $title := partial "title" . -}}
+{{- $description := site.Params.description -}}
+
+{{- with .Description -}}
+  {{- $description = . -}}
+{{- else with .Summary -}}
+  {{- $description = . | plainify -}}
+{{- end -}}
+
+{{- if eq .Kind "404" -}}
+  <meta name="robots" content="noindex, follow">
+{{- else -}}
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+{{- end -}}
+
+<meta name="description" content="{{ $description | htmlEscape }}">
+
+<meta property="og:title" content="{{ $title | htmlEscape }}">
+<meta property="og:description" content="{{ $description | htmlEscape }}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{ site.Title | htmlEscape }}">
+
+{{- with .Permalink }}
+  <link rel="canonical" href="{{ . }}">
+  <meta property="og:url" content="{{ . }}">
+  <meta name="twitter:url" content="{{ . }}">
+{{- end }}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title | htmlEscape }}">
+<meta name="twitter:description" content="{{ $description | htmlEscape }}">

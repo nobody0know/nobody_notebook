@@ -1,0 +1,12 @@
+{{- $class := .Get "class" | default (.Get 0) -}}
+{{- $parts := partial "split-content" .Inner -}}
+<div class="columns{{ with $class }} {{ . }}{{ end }}">
+  {{- range $parts -}}
+    {{- $content := . | strings.TrimSpace -}}
+    {{- if $content -}}
+      <div class="column">
+        {{- $.Page.RenderString $content -}}
+      </div>
+    {{- end -}}
+  {{- end -}}
+</div>

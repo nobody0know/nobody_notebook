@@ -1,0 +1,26 @@
+{{- $comma := false -}}
+{{- $root := . -}}
+{{- $pages := partialCached "flat-pages" (dict "Section" $root) $root.Path -}}
+[
+{{- range $i, $page := $pages -}}
+  {{- if and $page.File (or $page.Title (truncate 120 $page.Plain)) -}}
+    {{- $content := .Content | replaceRE "(?s)<pre[^>]*>.*?</pre>" "" | plainify | replaceRE "\\s{2,}" " " | strings.TrimSpace -}}
+    {{- $summary := truncate 100 $content | default (i18n "no_summary") -}}
+
+    {{- $parentSection := "" -}}
+    {{- if and $page.IsSection (eq $page.Parent $root) -}}
+      {{- $parentSection = partial "title" $page -}}
+    {{- else -}}
+      {{- range $page.Ancestors -}}
+        {{- if eq .Parent $root -}}
+          {{- $parentSection = partial "title" . -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if $comma }},{{ end -}}
+    {{- (slice $i $page.RelPermalink (partial "title" $page) $parentSection $summary $content) | jsonify -}}
+    {{- $comma = true -}}
+  {{- end -}}
+{{- end -}}
+]

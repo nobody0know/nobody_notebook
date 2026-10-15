@@ -1,0 +1,39 @@
+baseURL: 'https://nobody0know.github.io/nobody_notebook/'
+title: 紫野的笔记本
+locale: zh-cn
+defaultContentLanguage: zh
+hasCJKLanguage: true
+theme: hudocs
+
+enableRobotsTXT: true
+disableKinds:
+  - taxonomy
+  - term
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+
+menus:
+  main:
+    - name: 首页
+      pageRef: /
+      weight: 1
+    - name: GitHub
+      url: 'https://github.com/nobody0know/nobody_notebook'
+      weight: 2
+      params:
+        icon: github
+
+params:
+  description: '紫野的线上笔记本，记录嵌入式、ROS、Linux 学习心得'
+  docs_versions: false
+  docs_edit_url: 'https://github.com/nobody0know/nobody_notebook/tree/main/content'
+  docs_ai: false
+  footer_copyright: 'Copyright © {{Year}} [Xiangjian.Lai](https://github.com/nobody0know)'
